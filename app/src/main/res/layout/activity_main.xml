@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="รหัสนักศึกษา"
+        android:id="@+id/txtId"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="70dp"
+        android:hint="=ชื่อนักศึกษา" />
+
+    <EditText
+        android:id="@+id/txtTel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="120dp"
+        android:hint="เบอร์โทร" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="170dp"
+        android:hint="อีเมลล์" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:text="SAVE" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="30dp"
+        android:id="@+id/dataView">
+
+    </ListView>
+</RelativeLayout>
